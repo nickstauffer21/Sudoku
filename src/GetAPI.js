@@ -19,7 +19,6 @@ export async function fetchBoard(difficulty) {
     const formatedBoard = board.map((row) =>
       row.map((col) => (col === 0 ? "" : col.toString()))
     );
-    console.log(data);
     return formatedBoard;
   } catch (err) {
     throw err;
